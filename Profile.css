@@ -1,0 +1,484 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkBrown: #73463c;
+  --midBrown: #bf8360;
+  --lightBrown: #d9bca3;
+}
+/* nav */
+nav {
+  position: fixed;
+  background-color: white;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+.nav-item {
+  list-style: none;
+  margin: 0px 10px;
+}
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--darkBrown);
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.nav-link:hover {
+  color: var(--lightBrown);
+  transform: translateY(-2px);
+}
+.banner {
+  width: 100%;
+  height: 660px;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+  /* background-image: url("/banner-1.jpg"); */
+  /* background: url(/banner-1.jpg) no-repeat right 50% / 100% auto; */
+  padding-top: 160px;
+  /* background-position: center; */
+}
+.infowrap {
+  width: 70%;
+  height: 560px;
+  background-color: rgb(255, 255, 255);
+  margin: 0px auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+}
+.info {
+  display: flex;
+  align-items: center;
+  height: 500px;
+}
+.info > :first-child {
+  width: 50%;
+}
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+}
+.pic {
+  height: 500px;
+}
+.intro {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--darkBrown);
+}
+
+.intro div {
+  margin-bottom: 15px;
+}
+.intro p {
+  margin-bottom: 40px;
+  color: var(--darkBrown);
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.intro div a {
+  color: var(--darkBrown);
+}
+
+.name {
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--darkBrown) 82;
+  padding-bottom: 20px;
+  color: var(--darkBrown);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.intro div {
+  letter-spacing: 1px;
+}
+.intro span {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.iconwrap {
+  width: 100%;
+  height: 60px;
+  background-color: var(--lightBrown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconwrap i {
+  line-height: 28px;
+  font-size: 28px;
+  margin: 0 30px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.iconwrap i:hover {
+  color: var(--darkBrown);
+}
+/* 第二段自介 */
+.secintro {
+  background-color: #f1f2f0;
+}
+
+.introtxt {
+  padding: 150px 0px 100px;
+  margin: auto;
+  width: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.introtxt h2 {
+  margin-bottom: 30px;
+  color: var(--darkBrown);
+  letter-spacing: 1px;
+}
+.introtxt p {
+  line-height: 35px;
+  font-size: 16px;
+  /* text-align: justify-all; */
+  /* text-align: center; */
+}
+
+/* 工作經歷 */
+.resumewrap {
+  width: 900px;
+  margin: 100px auto 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: var(--midBrown);
+  letter-spacing: 2px;
+  padding-bottom: 40px;
+}
+.title:before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-right: 20px;
+  background-color: wheat;
+  background-color: var(--lightBrown);
+}
+.wrap1 {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 45px 60px 60px;
+}
+.cvbtn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+.cvbtn .contenttitle {
+  font-size: 20px;
+  color: #1f261f;
+  font-weight: bold;
+}
+.resumelink {
+  font-size: 16px;
+  padding: 5px 20px;
+  font-weight: bold;
+  /* cursor: pointer; */
+  background-color: var(--midBrown);
+  transition: 0.3s;
+}
+.resumelink a {
+  text-decoration: none;
+  color: white;
+}
+.resumelink:hover {
+  background-color: var(--darkBrown);
+}
+.time {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #1f261f;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.wrap1 .content {
+  width: 100%;
+}
+.company {
+  width: 28%;
+  color: var(--darkBrown);
+}
+
+.companyname {
+  color: var(--darkBrown);
+  font-size: 16px;
+}
+.content .txt {
+  width: 70%;
+}
+.txt li {
+  margin-bottom: 8px;
+}
+.txt div {
+  margin-bottom: 10px;
+  color: var(--darkBrown);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.position {
+  color: var(--darkBrown);
+  font-size: 16px;
+}
+.client {
+  color: #1f261f;
+}
+
+.client :first-child {
+  color: #1f261fac;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* 技能區 */
+.skillwrap {
+  padding-top: 100px;
+  height: 500px;
+  /* margin-top: 100px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skillbox {
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.skillbox img {
+  max-height: 110px;
+  object-fit: contain;
+  margin: 0px 10px;
+}
+.reactlogo,
+.php {
+  height: 90px;
+}
+
+/* 作品集 */
+.pj-wrap {
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 100px; */
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+.pj-background {
+  position: relative;
+  display: flex;
+  height: 500px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.backcover {
+  background-color: #f1f2f0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.pj-img {
+  width: 350px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.pj-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: hsla(0, 0%, 0%, 0.654);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px 10px;
+  transform: translateY(250px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.img-cover > :first-child {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.pj-img:hover .img-cover {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.pj-img:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.demolink a,
+.pj-link {
+  margin: 0 auto;
+  text-decoration: none;
+  border-bottom: 0px;
+  color: var(--lightBrown);
+  font-weight: bold;
+  transition: 0.3s;
+}
+.pj-link {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.demolink {
+  border-radius: 100%;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: lightgray;
+  transition: 0.3s;
+  border-bottom: width 0%;
+}
+.demolink:hover {
+  background-color: white;
+}
+.demolink:hover a {
+  color: var(--darkBrown);
+}
+
+.pj-link:hover .backarrow {
+  transform: translateX(0px);
+  opacity: 1;
+  color: var(--lightBrown);
+}
+.pj-link:hover {
+  color: var(--lightBrown);
+}
+.pj-link .backarrow {
+  margin-left: 10px;
+  transform: translateX(-25px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.pj-link:hover .frontarrow {
+  transform: translateX(25px);
+  opacity: 0;
+  color: var(--lightBrown);
+}
+.frontarrow {
+  opacity: 1;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+/* 聯絡表單 */
+.contactwrap {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+.contactform {
+  width: 600px;
+  margin-bottom: 200px;
+  background-color: #f1f2f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 50px 100px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 10px 60px -30px;
+}
+.contactform input,
+textarea {
+  border: none;
+  margin-bottom: 30px;
+  width: 400px;
+  height: 40px;
+}
+.contactform label {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: var(--darkBrown);
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+textarea {
+  height: 100px;
+}
+.submitbtn {
+  width: 200px;
+  border: none;
+  background-color: var(--lightBrown);
+  padding: 10px 20px;
+  margin: 20px auto 0px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #f1f2f0;
+  transition: 0.5s;
+}
+.submitbtn:hover {
+  background-color: var(--darkBrown);
+}
+textarea:focus,
+input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--midBrown);
+}
